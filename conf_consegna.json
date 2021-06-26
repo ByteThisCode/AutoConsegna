@@ -1,0 +1,22 @@
+[
+	{
+		"name" : "esercizio1.tgz",
+		"hosts" : [
+					{
+						"name" : "Client",
+						"host" : "192.168.56.201"
+					},
+					{
+						"name" : "Router",
+						"host" : "192.168.56.202"
+					},
+					{
+						"name" : "Server1",
+						"host" : "192.168.56.203"
+					},
+					{
+						"name" : "Server2",
+						"host" : "192.168.56.204"
+					}]
+	}
+]
