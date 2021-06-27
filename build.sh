@@ -10,7 +10,7 @@ IP_SERVER=10.20.20.1
 mkdir -p Client/root
 
 #Tutti i file nella home
-scp -r root@$IP_CLIENT:/root/ ./Client/root/
+scp -r root@$IP_CLIENT:/root/ ./Client/
 rm -rf ./Client/root/.*
 
 #History
@@ -28,7 +28,7 @@ scp root@$IP_CLIENT:/etc/network/interfaces ./Client/etc/network/
 mkdir -p Router/root
 
 #Tutti i file nella home
-#scp -r root@$IP_ROUTER:/root/[!.]* ./Router/root/
+#scp -r root@$IP_ROUTER:/root/ ./Router/
 #rm -rf ./Router/root/.*
 
 #History
@@ -41,7 +41,7 @@ mkdir -p Router/etc/network/
 #scp root@$IP_ROUTER:/etc/dnsmasq.conf ./Router/etc/dnsmasq.conf
 
 #SE ROUTER LOCALE
-cp -r /root/ ./Router/root/
+cp -r /root/ ./Router/
 rm -rf ./Router/root/.*
 cp /root/.bash_history ./Router/root/
 cp /etc/network/interfaces ./Router/etc/network/
@@ -54,7 +54,7 @@ cp /etc/dnsmasq.conf ./Router/etc/
 mkdir -p Server/root
 
 #Tutti i file nella home
-scp -r root@$IP_SERVER:/root/ ./Server/root/
+scp -r root@$IP_SERVER:/root/ ./Server/
 rm -rf ./Server/root/.*
 
 #History
