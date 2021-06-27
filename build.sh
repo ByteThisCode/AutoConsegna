@@ -14,7 +14,7 @@ mkdir -p Client/etc/network/
 scp root@$IP_CLIENT:/etc/network/interfaces ./Client/etc/network/
 
 #Tutti i file nella home
-scp -r root@$IP_CLIENT:/root/ ./Client/root/
+scp -r root@$IP_CLIENT:/root/[!.]* ./Client/root/
 
 
 #--------------------------------ROUTER-----------------------------------#
@@ -23,7 +23,7 @@ mkdir -p Router/root
 #scp root@$IP_ROUTER:/root/.bash_history ./Router/root/.
 
 #Tutti i file nella home
-#scp -r root@$IP_ROUTER:/root/ ./Router/root/
+#scp -r root@$IP_ROUTER:/root/[!.]* ./Router/root/
 
 mkdir -p Router/etc/network/
 #scp root@$IP_ROUTER:/etc/network/interfaces ./Router/etc/network/interfaces
@@ -33,7 +33,7 @@ mkdir -p Router/etc/network/
 cp /root/.bash_history ./Router/root/
 cp /etc/network/interfaces ./Router/etc/network/
 cp /etc/dnsmasq.conf ./Router/etc/
-cp -r /root/ ./Router/root/
+cp -r /root/[!.]* ./Router/root/
 
 
 #--------------------------------SERVER-----------------------------------#
@@ -45,7 +45,7 @@ mkdir -p Server/etc/network/
 scp root@$IP_SERVER:/etc/network/interfaces ./Server/etc/network/interfaces
 
 #Tutti i file nella home
-scp -r root@$IP_SERVER:/root/ ./Server/root/
+scp -r root@$IP_SERVER:/root/[!.]* ./Server/root/
 
 
 #----------------------------------TAR------------------------------------#
